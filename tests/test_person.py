@@ -19,3 +19,8 @@ def test_first_name(person: Person):
 
 def test_last_name(person: Person):
     assert person.last_name == "Shelby"
+
+
+def test_celebrate_birthday(person: Person):
+    person.celebrate_birthday()
+    assert person.age == 35
