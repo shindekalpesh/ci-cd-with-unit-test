@@ -24,3 +24,8 @@ def test_last_name(person: Person):
 def test_celebrate_birthday(person: Person):
     person.celebrate_birthday()
     assert person.age == 35
+
+
+def test_add_jobs(person: Person):
+    person.add_job("Pilot")
+    assert person.jobs == ["Software Developer", "Pilot"]
