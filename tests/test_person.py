@@ -29,3 +29,11 @@ def test_celebrate_birthday(person: Person):
 def test_add_jobs(person: Person):
     person.add_job("Pilot")
     assert person.jobs == ["Software Developer", "Pilot"]
+
+
+def test_no_surname(person: Person):
+    '''
+    Not using above fixture, instead using hardcoded one for this particular test func.
+    '''
+    person.name = "Thomas"
+    assert not person.last_name
